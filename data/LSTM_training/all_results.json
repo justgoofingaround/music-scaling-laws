@@ -1,0 +1,94 @@
+{
+  "tiny": {
+    "model_name": "tiny",
+    "n_params": 237986,
+    "config": {
+      "vocab_size": 34,
+      "embedding_dim": 64,
+      "hidden_dim": 128,
+      "num_layers": 2,
+      "dropout": 0.2,
+      "bidirectional": false
+    },
+    "best_val_loss": 3.3467628410884314,
+    "final_val_loss": 3.3467628410884314,
+    "final_perplexity": 28.410614947421845,
+    "train_losses": [
+      3.2212931149607074
+    ],
+    "val_losses": [
+      3.3467628410884314
+    ],
+    "training_time": 3764.5017549991608,
+    "gpu_memory_gb": 0
+  },
+  "small": {
+    "model_name": "small",
+    "n_params": 1461026,
+    "config": {
+      "vocab_size": 34,
+      "embedding_dim": 128,
+      "hidden_dim": 256,
+      "num_layers": 3,
+      "dropout": 0.2,
+      "bidirectional": false
+    },
+    "best_val_loss": 3.248584474836077,
+    "final_val_loss": 3.248584474836077,
+    "final_perplexity": 25.753858868067123,
+    "train_losses": [
+      3.2523002290520173
+    ],
+    "val_losses": [
+      3.248584474836077
+    ],
+    "training_time": 252.24779605865479,
+    "gpu_memory_gb": 0.5249691009521484
+  },
+  "medium": {
+    "model_name": "medium",
+    "n_params": 4556066,
+    "config": {
+      "vocab_size": 34,
+      "embedding_dim": 256,
+      "hidden_dim": 384,
+      "num_layers": 4,
+      "dropout": 0.3,
+      "bidirectional": false
+    },
+    "best_val_loss": 3.2485402720315117,
+    "final_val_loss": 3.2485402720315117,
+    "final_perplexity": 25.75272050043649,
+    "train_losses": [
+      3.2522078552765064
+    ],
+    "val_losses": [
+      3.2485402720315117
+    ],
+    "training_time": 696.3638944625854,
+    "gpu_memory_gb": 0.9685111045837402
+  },
+  "large": {
+    "model_name": "large",
+    "n_params": 10274594,
+    "config": {
+      "vocab_size": 34,
+      "embedding_dim": 384,
+      "hidden_dim": 512,
+      "num_layers": 5,
+      "dropout": 0.3,
+      "bidirectional": false
+    },
+    "best_val_loss": 3.248442758832659,
+    "final_val_loss": 3.248442758832659,
+    "final_perplexity": 25.750209392716396,
+    "train_losses": [
+      3.25230592604855
+    ],
+    "val_losses": [
+      3.248442758832659
+    ],
+    "training_time": 1435.470042705536,
+    "gpu_memory_gb": 1.5514798164367676
+  }
+}

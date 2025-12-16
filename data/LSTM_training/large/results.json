@@ -1,0 +1,23 @@
+{
+  "model_name": "large",
+  "n_params": 10274594,
+  "config": {
+    "vocab_size": 34,
+    "embedding_dim": 384,
+    "hidden_dim": 512,
+    "num_layers": 5,
+    "dropout": 0.3,
+    "bidirectional": false
+  },
+  "best_val_loss": 3.248442758832659,
+  "final_val_loss": 3.248442758832659,
+  "final_perplexity": 25.750209392716396,
+  "train_losses": [
+    3.25230592604855
+  ],
+  "val_losses": [
+    3.248442758832659
+  ],
+  "training_time": 1435.470042705536,
+  "gpu_memory_gb": 1.5514798164367676
+}

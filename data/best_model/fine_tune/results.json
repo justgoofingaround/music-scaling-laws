@@ -1,0 +1,34 @@
+[
+  {
+    "config_id": 3,
+    "lr": 0.001,
+    "dropout": 0.1,
+    "weight_decay": 0.0,
+    "val_loss": 3.255674948457812,
+    "test_ppl": 25.70491857390226
+  },
+  {
+    "config_id": 2,
+    "lr": 0.0006,
+    "dropout": 0.1,
+    "weight_decay": 0.1,
+    "val_loss": 3.256989608045484,
+    "test_ppl": 3417.5835609644173
+  },
+  {
+    "config_id": 1,
+    "lr": 0.0003,
+    "dropout": 0.1,
+    "weight_decay": 0.1,
+    "val_loss": 3.2575889493598313,
+    "test_ppl": 3259.919063827304
+  },
+  {
+    "config_id": 4,
+    "lr": 0.0006,
+    "dropout": 0.0,
+    "weight_decay": 0.1,
+    "val_loss": 3.2595015588353893,
+    "test_ppl": 8043.126206162471
+  }
+]

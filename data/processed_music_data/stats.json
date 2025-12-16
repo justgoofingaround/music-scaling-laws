@@ -1,0 +1,157 @@
+{
+  "dataset_info": {
+    "total_samples": 257504,
+    "total_tokens": 242648,
+    "tokenization": "character",
+    "vocab_size": 34,
+    "timestamp": "2025-12-08T04:06:32.888865"
+  },
+  "splits": {
+    "train": {
+      "num_samples": 252353,
+      "num_tokens": 237779,
+      "proportion": 0.98
+    },
+    "val": {
+      "num_samples": 2575,
+      "num_tokens": 2440,
+      "proportion": 0.01
+    },
+    "test": {
+      "num_samples": 2576,
+      "num_tokens": 2429,
+      "proportion": 0.010000000000000018
+    }
+  },
+  "sequence_length_statistics": {
+    "overall": {
+      "min": 0,
+      "max": 1,
+      "mean": 0.9423076923076923,
+      "median": 1.0,
+      "std": 0.23316068563427195,
+      "percentiles": {
+        "25th": 1.0,
+        "50th": 1.0,
+        "75th": 1.0,
+        "90th": 1.0,
+        "95th": 1.0,
+        "99th": 1.0
+      }
+    },
+    "train": {
+      "min": 0,
+      "max": 1,
+      "mean": 0.9422475659096583,
+      "median": 1.0
+    },
+    "val": {
+      "min": 0,
+      "max": 1,
+      "mean": 0.9475728155339805,
+      "median": 1.0
+    },
+    "test": {
+      "min": 0,
+      "max": 1,
+      "mean": 0.9429347826086957,
+      "median": 1.0
+    }
+  },
+  "vocabulary_statistics": {
+    "total_unique_chars": 30,
+    "special_tokens": [
+      "<PAD>",
+      "<UNK>",
+      "<BOS>",
+      "<EOS>"
+    ],
+    "most_common_chars": [
+      {
+        "char": "e",
+        "count": 21015
+      },
+      {
+        "char": "t",
+        "count": 14533
+      },
+      {
+        "char": "7",
+        "count": 11676
+      },
+      {
+        "char": "a",
+        "count": 11665
+      },
+      {
+        "char": "0",
+        "count": 11436
+      },
+      {
+        "char": "d",
+        "count": 11331
+      },
+      {
+        "char": "c",
+        "count": 11267
+      },
+      {
+        "char": "s",
+        "count": 9729
+      },
+      {
+        "char": "x",
+        "count": 9715
+      },
+      {
+        "char": "r",
+        "count": 9715
+      },
+      {
+        "char": "<",
+        "count": 9714
+      },
+      {
+        "char": ".",
+        "count": 9702
+      },
+      {
+        "char": "o",
+        "count": 9698
+      },
+      {
+        "char": ">",
+        "count": 9695
+      },
+      {
+        "char": "|",
+        "count": 9689
+      },
+      {
+        "char": "m",
+        "count": 9670
+      },
+      {
+        "char": "2",
+        "count": 6768
+      },
+      {
+        "char": "1",
+        "count": 6464
+      },
+      {
+        "char": "f",
+        "count": 6461
+      },
+      {
+        "char": "4",
+        "count": 5335
+      }
+    ]
+  },
+  "data_quality": {
+    "empty_samples_filtered": 0,
+    "samples_with_special_chars": 29712,
+    "average_unique_chars_per_sample": 0.9423076923076923
+  }
+}

@@ -1,0 +1,75 @@
+================================================================================
+LSTM VS TRANSFORMER SCALING LAW COMPARISON
+================================================================================
+
+1. SCALING LAW PARAMETERS
+--------------------------------------------------------------------------------
+Architecture    α (exponent)         a (coeff)            c (offset)     
+--------------------------------------------------------------------------------
+LSTM            0.344289 ± 0.796058  10.000000 ± 86.533291  3.196614
+Transformer     -0.543590 ± 0.213005  0.000312 ± 0.001183  2.895249
+
+2. SCALING EFFICIENCY ANALYSIS
+--------------------------------------------------------------------------------
+Scaling Exponent Difference: Δα = -0.887878
+Better Scaling Architecture: LSTM
+
+To halve the loss:
+  LSTM needs:        7.49× more parameters
+  Transformer needs: 0.28× more parameters
+  Efficiency ratio:  26.80× (Transformer advantage)
+
+3. COMPUTATIONAL EFFICIENCY
+--------------------------------------------------------------------------------
+Average Training Time per Parameter:
+  LSTM:        4070.84 μs/param
+  Transformer: 382.17 μs/param
+  Ratio:       10.65× (Transformer faster)
+
+Average GPU Memory per Parameter:
+  LSTM:        180.72 bytes/param
+  Transformer: 1426.39 bytes/param
+  Ratio:       0.13× (LSTM more efficient)
+
+4. SAMPLE EFFICIENCY
+--------------------------------------------------------------------------------
+Best Validation Loss:
+  LSTM:        3.248443 (large, 10,274,594 params)
+  Transformer: 3.249991 (tiny, 117,504 params)
+
+Loss Achieved per Training Hour (lower is better):
+  LSTM average:        18.626006
+  Transformer average: 33.280448
+
+5. DISCUSSION: WHY THESE DIFFERENCES?
+--------------------------------------------------------------------------------
+
+Architectural Differences:
+
+a) Parallelization:
+   - Transformers: Process entire sequence in parallel (attention)
+   - LSTMs: Sequential processing (one token at a time)
+   → Transformers train faster per epoch but may use more memory
+
+b) Long-range Dependencies:
+   - Transformers: Direct connections via self-attention (O(n²))
+   - LSTMs: Information flows through hidden state (sequential)
+   → Transformers better at capturing long-range patterns
+
+c) Parameter Efficiency:
+   - Higher α value (-0.5436 vs 0.3443) means:
+   - LSTMs scale better: more benefit from additional parameters
+   - Each new parameter in LSTM provides more loss reduction
+
+d) Computational Trade-offs:
+   - Transformers: Higher throughput (parallel), higher memory (attention)
+   - LSTMs: Lower memory, sequential bottleneck limits speed
+
+6. PRACTICAL RECOMMENDATIONS
+--------------------------------------------------------------------------------
+✓ Based on these results, consider your specific constraints
+  and requirements when choosing architecture.
+
+================================================================================
+END OF REPORT
+================================================================================

@@ -1,0 +1,20 @@
+{
+  "model_name": "xl_best",
+  "n_params": 38516304,
+  "config": {
+    "vocab_size": 34,
+    "block_size": 256,
+    "n_layer": 12,
+    "n_head": 12,
+    "n_embd": 516,
+    "dropout": 0.1,
+    "bias": false
+  },
+  "best_val_loss": 3.2486299846483315,
+  "test_loss": 3.24652639206718,
+  "test_perplexity": 25.700909800369796,
+  "total_epochs": 5,
+  "total_steps": 37115,
+  "total_training_time": 3.9937171936035156,
+  "gpu_memory_gb": 6.337654113769531
+}

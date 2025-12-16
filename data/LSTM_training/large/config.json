@@ -1,0 +1,8 @@
+{
+  "vocab_size": 34,
+  "embedding_dim": 384,
+  "hidden_dim": 512,
+  "num_layers": 5,
+  "dropout": 0.3,
+  "bidirectional": false
+}

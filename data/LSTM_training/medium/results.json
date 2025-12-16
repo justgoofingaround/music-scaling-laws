@@ -1,0 +1,23 @@
+{
+  "model_name": "medium",
+  "n_params": 4556066,
+  "config": {
+    "vocab_size": 34,
+    "embedding_dim": 256,
+    "hidden_dim": 384,
+    "num_layers": 4,
+    "dropout": 0.3,
+    "bidirectional": false
+  },
+  "best_val_loss": 3.2485402720315117,
+  "final_val_loss": 3.2485402720315117,
+  "final_perplexity": 25.75272050043649,
+  "train_losses": [
+    3.2522078552765064
+  ],
+  "val_losses": [
+    3.2485402720315117
+  ],
+  "training_time": 696.3638944625854,
+  "gpu_memory_gb": 0.9685111045837402
+}

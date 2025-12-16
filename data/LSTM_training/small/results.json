@@ -1,0 +1,23 @@
+{
+  "model_name": "small",
+  "n_params": 1461026,
+  "config": {
+    "vocab_size": 34,
+    "embedding_dim": 128,
+    "hidden_dim": 256,
+    "num_layers": 3,
+    "dropout": 0.2,
+    "bidirectional": false
+  },
+  "best_val_loss": 3.248584474836077,
+  "final_val_loss": 3.248584474836077,
+  "final_perplexity": 25.753858868067123,
+  "train_losses": [
+    3.2523002290520173
+  ],
+  "val_losses": [
+    3.248584474836077
+  ],
+  "training_time": 252.24779605865479,
+  "gpu_memory_gb": 0.5249691009521484
+}

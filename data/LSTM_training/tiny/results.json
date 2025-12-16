@@ -1,0 +1,23 @@
+{
+  "model_name": "tiny",
+  "n_params": 237986,
+  "config": {
+    "vocab_size": 34,
+    "embedding_dim": 64,
+    "hidden_dim": 128,
+    "num_layers": 2,
+    "dropout": 0.2,
+    "bidirectional": false
+  },
+  "best_val_loss": 3.3467628410884314,
+  "final_val_loss": 3.3467628410884314,
+  "final_perplexity": 28.410614947421845,
+  "train_losses": [
+    3.2212931149607074
+  ],
+  "val_losses": [
+    3.3467628410884314
+  ],
+  "training_time": 3764.5017549991608,
+  "gpu_memory_gb": 0
+}
